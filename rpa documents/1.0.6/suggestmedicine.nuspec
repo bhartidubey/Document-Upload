@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>SuggestMedicine</id>
+    <version>1.0.6</version>
+    <title>SuggestMedicine</title>
+    <authors>abhis</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Chatbot process for suggesting medicine</description>
+    <tags>VisualBasic VB UiPathStudioProcess</tags>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="UiPath.UIAutomation.Activities.Runtime" version="[23.10.8]" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

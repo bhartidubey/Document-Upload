@@ -1,0 +1,38 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result&Sequence_1",
+        "data&Sequence_1",
+        "file&Sequence_1",
+        "adataresult&Sequence_5",
+        "Index&Sequence_11",
+        "why&Sequence_2",
+        "sideEffect&Sequence_2",
+        "brandNames&Sequence_2",
+        "otherInfo&Sequence_2",
+        "emergency&Sequence_2",
+        "storageDisposal&Sequence_2",
+        "forgotDose&Sequence_2",
+        "dietryInstructions&Sequence_2",
+        "otherUses&Sequence_2",
+        "howToUse&Sequence_2",
+        "precaution&Sequence_2",
+        "doYouMeanFound&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

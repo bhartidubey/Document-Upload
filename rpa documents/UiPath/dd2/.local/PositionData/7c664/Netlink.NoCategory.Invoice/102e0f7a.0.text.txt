@@ -1,0 +1,17 @@
+Invoice No. 485744
+
+Date: 2017-05-28 Vendor: Star Software
+
+Aleea Rozelor 84
+
+Iasi, Romania
+
+Client Name ACME Systems Inc.
+Somewhere Road 59, Bucharest, Romania
+
+Notes
+
+Invoices must be paid within 20 days starting with the issue date.
+
+Item Description Quantity Price Per Total Waste management services Total: 150214 USD   1   150214 USD       150214 USD            
+                                                                                            Subtotal: Tax:   125178 USD 25035.6 USD

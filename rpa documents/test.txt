@@ -1,0 +1,12 @@
+input string: abcdef
+output: aBcDeF
+ 
+A=abcdef
+for each
+a
+
+
+
+
+employee.Asenumerable. where(function(row) row(salary).tostring > ("100").copytodatatable
+emlpoyee.where salary >

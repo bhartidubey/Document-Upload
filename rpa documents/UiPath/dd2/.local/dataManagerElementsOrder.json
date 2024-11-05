@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt1&Sequence_1",
+        "datasetoutput&Sequence_2",
+        "validationstation&Sequence_2",
+        "extractionresult&Sequence_2",
+        "classificationresult&Sequence_2",
+        "dommodel&Sequence_2",
+        "doctext&Sequence_2",
+        "taxonomy&Sequence_1",
+        "folderpath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

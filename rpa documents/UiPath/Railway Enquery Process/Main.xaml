@@ -1,0 +1,344 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,3907.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Railway Enquiry" sap:VirtualizedContainerService.HintSize="644.6666666666666,3842.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="SourceStation" />
+      <Variable x:TypeArguments="x:String" Name="DestinationStation" />
+      <Variable x:TypeArguments="x:String" Name="dateextraction" />
+      <Variable x:TypeArguments="x:String" Name="datemonth" />
+      <Variable x:TypeArguments="x:String" Name="dat" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="582.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[datemonth]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[datetime.Now.AddDays(7).ToString("MMMM yyyy")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="582.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[dat]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[datetime.Now.AddDays(7).ToString("d/MM").split("/")(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="582.6666666666666,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[dat]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="582.6666666666666,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[datetime.Now.AddDays(7).ToString(&quot;MMMMyyyy&quot;)]" />
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - From station" sap:VirtualizedContainerService.HintSize="582.6666666666666,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please Enter Source Station Name" Title="Station">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[SourceStation]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Destination station" sap:VirtualizedContainerService.HintSize="582.6666666666666,278" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please Enter Destination Station Name" Title="Station">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[DestinationStation]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Confirm Ticket - Train Ticket booking Online | Train seat availability" sap:VirtualizedContainerService.HintSize="582.6666666666666,2726.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="797b5b9a-921f-46f9-abed-b95cca09778a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2484.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="extracteddate" />
+              <Variable x:TypeArguments="x:String" Name="distance" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'From'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="797b5b9a-921f-46f9-abed-b95cca09778a" Text="[SourceStation + &quot;[k(Down)][k(Tab)]&quot;]" Timeout="5000" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="342, 485, 187, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='NDLS  - New Delhi' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NDLS  - New Delhi' tag='SPAN' type='' class='' check:innerText='NDLS - New Delhi' /&gt;" Guid="cdbf7090-6a07-40c2-96cb-1528b0a20a73" InformativeScreenshot="8830b7630a73fe61e2b60d0de83ee87b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="342, 447, 322, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='From' /&gt;" Guid="3eeb2ec1-3333-4f07-ba37-c4777e6832d0" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'From'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="797b5b9a-921f-46f9-abed-b95cca09778a" Text="[destinationstation + &quot;[k(Down)][k(Tab)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="806, 485, 262, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='MMCT  - Mumbai Central' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='MMCT  - Mumbai Central' tag='SPAN' type='' class='' check:innerText='MMCT - Mumbai Central' /&gt;" Guid="d6be9baf-8550-465c-b757-6e2fa8e5d638" InformativeScreenshot="5acb7f0fb85f275d4b8e139c17cf898f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="806, 447, 307, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='To' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='To' tag='LABEL' type='' class='' /&gt;" Guid="0f3c79c5-9432-485e-b308-30d82aaba799" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Departure Date'" sap:VirtualizedContainerService.HintSize="450,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="797b5b9a-921f-46f9-abed-b95cca09778a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="1240, 482, 173, 28" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='dateOfJourney' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dateOfJourney' tag='INPUT' type='text' class='MuiInputBase-input-673 MuiInput-input-661' aaname='Departure Date' /&gt;" Guid="9df0655a-1920-4008-9ca4-fbb6f0fbf8d7" InformativeScreenshot="8fe337b3bc71708a38370c8380fb113e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1240, 447, 173, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Departure Date' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Departure Date' tag='LABEL' type='' class='' check:innerText='Departure Date' /&gt;" Guid="51214d2c-598b-40e5-9b0d-967b3b0d6e13" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'September 2024'" sap:VirtualizedContainerService.HintSize="450,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="797b5b9a-921f-46f9-abed-b95cca09778a" TextString="[extracteddate]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="1166, 536, 321, 31" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='7' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root-1439 MuiTypography-body1-1441 MuiTypography-alignCenter-1455' tag='P' /&gt;" Guid="e68d3476-ca89-4794-bc7e-db27d40875eb" ImageBase64="" InformativeScreenshot="7d7efb61cabefe2a93e3dad00b4fd2a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[extracteddate +datemonth]" />
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="450,557.3333333333334" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,409.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="354,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03c06ab2-dc39-4ce8-99d6-3ef4f8f867f7" InformativeScreenshot="d250705f3f870f7542a4355e5580d90f" Selector="&lt;webctrl idx='2' tag='svg' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <uix:NGetText DisplayName="Get Text 'September 2024'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="797b5b9a-921f-46f9-abed-b95cca09778a" TextString="[extracteddate]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" DesignTimeRectangle="1166, 536, 321, 31" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='7' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root-1439 MuiTypography-body1-1441 MuiTypography-alignCenter-1455' tag='P' /&gt;" Guid="e68d3476-ca89-4794-bc7e-db27d40875eb" ImageBase64="" InformativeScreenshot="7d7efb61cabefe2a93e3dad00b4fd2a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="datemonth.Trim&lt;&gt;extracteddate.Trim" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'P'" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fd0ad9da-8396-4090-a795-d95b82255b02" InformativeScreenshot="d137299b719c13647e3a3234bd1b92a5" Selector="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='P' /&gt;&quot;, dat)]">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="83927f2b-c586-47da-a913-9ed94fee8158" InformativeScreenshot="7f019756df013b98de049ebcd4d9b65e" Selector="&lt;webctrl class='MuiButton-label' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="83927f2b-c586-47da-a913-9ed94fee8158" InformativeScreenshot="d9dbb5b4197f5117a2adf0f30dab6440" Selector="&lt;webctrl class='schedule' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;distance from &quot;+SourceStation+&quot; To &quot;+DestinationStation+&quot; is&quot;+distance]" />
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e26106a-344b-488c-9cb5-5bf8ed66a73f" InformativeScreenshot="3d084f634bfcba315c2658f1f1901d04" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='distance-right' tableRow='9' tag='TD' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:String">[distance]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;stop&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="cf1f6a598e572678cd53e6025cc1255b.jpg" Selector="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" Title="ConfirmTkt.com: Fastest Train Ticket Booking with easy IRCTC Login" Url="https://www.confirmtkt.com/rbooking-d/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

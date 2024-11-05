@@ -1,0 +1,221 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,2185.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,2120.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: RippleHire Login" sap:VirtualizedContainerService.HintSize="626,2010" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d43f0428-ce44-4d54-a7c5-11432f6f3f3b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1790.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd2:DataTable" Name="DATATABLE" />
+              <Variable x:TypeArguments="x:String" Name="data" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT xu'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d43f0428-ce44-4d54-a7c5-11432f6f3f3b" Text="IN1092" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://ltimindtreeapp.ripplehire.com/auth/login" CVScreenId="46a06b90-b21b-4eb7-abac-8fe647b588bc" CvElementArea="760, 503, 463, 70" CvType="InputBox" DesignTimeRectangle="786, 504, 436, 68" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT xu'" FullSelectorArgument="&lt;webctrl id='xu' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xu' tag='INPUT' type='text' class='form-control grey-border ' aaname='' /&gt;" Guid="ae1f8ff2-16bf-4433-be13-c672c345fb8b" InformativeScreenshot="c3c59c275972d92deba2c431fbe12dd3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RippleHire Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT xp'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d43f0428-ce44-4d54-a7c5-11432f6f3f3b" Text="LTIM@1234[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://ltimindtreeapp.ripplehire.com/auth/login" CVScreenId="46a06b90-b21b-4eb7-abac-8fe647b588bc" CvElementArea="739, 593, 482, 71" CvType="InputBox" DesignTimeRectangle="786, 594, 436, 68" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT xp'" FullSelectorArgument="&lt;webctrl id='xp' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xp' tag='INPUT' type='password' class='form-control grey-border' aaname='' /&gt;" Guid="cca21285-22e6-4340-b946-e735e71866d2" InformativeScreenshot="86a152a8829e6b52d001a63e6db03c7a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RippleHire Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Specialist -'" sap:VirtualizedContainerService.HintSize="530,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d43f0428-ce44-4d54-a7c5-11432f6f3f3b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ltimindtreeapp.ripplehire.com/ripplehire/agency#list" CVScreenId="4be9abb3-2cb4-4c5c-a205-4f175ac204ee" CvTextArea="278, 668, 257, 27" CvTextArgument="Specialist - Architecture" CvType="Text" DesignTimeRectangle="277, 655, 262, 51" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Specialist -'" FullSelectorArgument="&lt;webctrl parentid='row' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='row' tag='A' type='' class='job-title' aaname='Specialist - Architecture' check:innerText='Specialist - Architecture' /&gt;" Guid="b9542aab-f096-49ea-a870-ec60d0c0f513" InformativeScreenshot="31957119bae1ac62f4e1d2c6e68720d8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All job openings at LTIMindtree' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4be9abb3-2cb4-4c5c-a205-4f175ac204ee" CvTextArea="278, 668, 257, 27" CvTextArgument="Specialist - Architecture" CvType="Text" DesignTimeRectangle="278, 667, 257, 28" ElementType="Text" FriendlyName="'Specialist -'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      <uix:Target CVScreenId="4be9abb3-2cb4-4c5c-a205-4f175ac204ee" CvTextArea="276, 717, 104, 19" CvTextArgument="ID: 579224" CvType="Text" DesignTimeRectangle="277, 713, 103, 38" ElementType="ListItem" FriendlyName="'ID:  579224'" FullSelectorArgument="&lt;webctrl parentid='row' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='row' tag='LI' type='' class='' aaname='                                           579224                      ' check:innerText='ID:  579224' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'DIV'" sap:VirtualizedContainerService.HintSize="530,172.66666666666666" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c363252-98b9-4733-aac5-c4c8d812dd24" InformativeScreenshot="320f0adafa4346c34f9ca55caa95b181" Selector="&lt;html app='chrome.exe' title='Submit for 579224' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='mid-panel' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetOCRText.Target>
+              <ui:GetOCRText.Text>
+                <OutArgument x:TypeArguments="x:String">[data]</OutArgument>
+              </ui:GetOCRText.Text>
+            </ui:GetOCRText>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Specialist -'" FileName="screenshot1.png" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="530,239.33333333333334" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="d43f0428-ce44-4d54-a7c5-11432f6f3f3b" Version="V3">
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="https://ltimindtreeapp.ripplehire.com/ripplehire/agency#detail/job/579224" DesignTimeRectangle="140, -71, 1157, 1315" DesignTimeScaleFactor="1.5" FriendlyName="'Specialist -'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='mid-panel' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='mid-panel' tag='DIV' class='col-xs-12 col-md-8' aaname='      ' /&gt;" Guid="288c5cdb-6d08-494a-9910-6c5a061c21c2" ImageBase64="" InformativeScreenshot="cff732ad093994513890c89a1ed3876b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Submit for 579224' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Visible" />
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <p1:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\bdubey\Documents\jobs.docx" sap:VirtualizedContainerService.HintSize="530,331.3333333333333" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+              <p1:WordApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WordDocument">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,221.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <p1:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[data]" />
+                  </Sequence>
+                </ActivityAction>
+              </p1:WordApplicationScope.Body>
+            </p1:WordApplicationScope>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="530,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;STOP&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFfSURBVDhPtZA/S8NQFEdDKRJKEZH+AQnBhgyORf0ADk7SIXRwkLafw1VEixURJ0fpIE62k5/AUeomnZxEpNggpRRxMM/z0iuNtYUO+oPDDXn33HcT49/SzXoxP+ulIC6vZgtCEs7gDRT04RJcaZkemmLcfE59Bi1H6XUzXl5aJ8dpVmwortVLC37GK4E/NuSk6t5vwe9tcs3yBgwYoOAB4ghLbHSjZWqPuo68X3Vbj9SEqOHNJjyJ/I2lzxD1p7kwj2Qhd6gKdkJZh+btMfnKaVTkdBgEE+5E1uzJUThgNyK3YLSeBKEekTUlOQoHFEV+BStdC5LpmrIhPKdZ3/4ZkV/gxz+YY2X94w6Q8uCDSh+pJjXDd+shtyIPYFPUUXKN8jIDCgjHoTyiA94hNyIWwBZlclh/FfpjQyBop2rBKc8xaZ0emlbgGj6GsnqHC4YsSstsQUogOVRTXv11DOMLQYQFzjBT7TgAAAAASUVORK5CYII=" InformativeScreenshot="041156a85db2c92363f1ff6f3cd9ab5e.jpg" Selector="&lt;html app='chrome.exe' title='RippleHire Login' /&gt;" Title="RippleHire Login" Url="https://ltimindtreeapp.ripplehire.com/auth/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

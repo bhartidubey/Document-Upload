@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.input="Pacritinib" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="input" Type="InArgument(x:String)" />
+    <x:Property Name="why" Type="OutArgument(x:String)" />
+    <x:Property Name="precaution" Type="OutArgument(x:String)" />
+    <x:Property Name="sideEffect" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1150,1194</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="568,1129.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: MedlinePlus - Health Information from the National Library of Medicine" sap:VirtualizedContainerService.HintSize="506,1018.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="829490cd-c45b-40a9-a1ae-51439fac2c2d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,799.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="False" DisplayName="Type Into 'INPUT searchtext_primary'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="829490cd-c45b-40a9-a1ae-51439fac2c2d" Text="[input]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://medlineplus.gov/" CvElementArea="1068, 403, 517, 62" CvType="InputBox" DesignTimeRectangle="1073, 404, 511, 57" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='searchtext_primary' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchtext_primary' tag='INPUT' type='text' class='form-text ui-autocomplete-input' aaname='Search MedlinePlus' /&gt;" Guid="61575bff-dec7-4691-8a93-5b87a75fb9ea" InformativeScreenshot="d695314f1867db2e2705b60cb6a2b046.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MedlinePlus - Health Information from the National Library of Medicine' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="388,25.333333333333332" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="TopLeft">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0b71923d-0b12-43eb-b048-586252106b46" InformativeScreenshot="2203904efe06f7628538178fa77e6b1f" Selector="[string.Format(&quot;&lt;html app='chrome.exe' title='MedlinePlus - Search Results for: {0}' /&gt;&lt;webctrl tag='DIV' innertext='{0} ' /&gt;&quot;, input)]">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <uix:NGetText DisplayName="Get Text 'Why is'" sap:VirtualizedContainerService.HintSize="388,25.333333333333332" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="829490cd-c45b-40a9-a1ae-51439fac2c2d" TextString="[why]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://medlineplus.gov/druginfo/meds/a617038.html" DesignTimeRectangle="268, 165, 1380, 247" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='why' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='why' tag='DIV' type='' class='section' aaname='' /&gt;" Guid="67cb4850-7265-4c73-9c09-b912c3e99725" InformativeScreenshot="725b037bfe16f3f3a938103adf08cb96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Abaloparatide Injection: MedlinePlus Drug Information' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Abaloparatide injection'" sap:VirtualizedContainerService.HintSize="388,25.333333333333332" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="829490cd-c45b-40a9-a1ae-51439fac2c2d" TextString="[sideEffect]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://medlineplus.gov/druginfo/meds/a617038.html#side-effects" DesignTimeRectangle="268, 401, 1380, 846" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='section-side-effects' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='section-side-effects' tag='DIV' type='' class='section-body' aaname='' /&gt;" Guid="b2aed3d7-eb31-4911-8d4a-f7d76a0d315e" InformativeScreenshot="027f3efbd10dbf53a316c3ef4c12947e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Abaloparatide Injection: MedlinePlus Drug Information' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Before receiving'" sap:VirtualizedContainerService.HintSize="388,25.333333333333332" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="829490cd-c45b-40a9-a1ae-51439fac2c2d" TextString="[precaution]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://medlineplus.gov/druginfo/meds/a617038.html#precautions" DesignTimeRectangle="268, 250, 1380, 437" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='section-precautions' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='section-precautions' tag='DIV' type='' class='section-body' aaname='' /&gt;" Guid="c232062b-a59a-4a5f-9795-dabd8d294995" InformativeScreenshot="c743a2ff16b269df7689c5704d27b0ec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Abaloparatide Injection: MedlinePlus Drug Information' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKXSURBVDhPfVJrSFRhEB0kSih6sFGRYq/1gYZmuT5WjRKU8EUvrH6UWBbWVqSQWZHttiYoalpWSOWfQkQsRVchdRVTtxVXDS1DUwtNcs1yXRNRsdPc6/2TpQfOZb6Zc4aZ77u0EH660JXMYuYn5keJQqxnyiTZ4vAtD9/DQvyPvuVhJyTZ4vDSBXgrdRH/mIWcjy7opCRbHLt1Xsu2Fe8aC6yIZFOYaN5bGQnnV4opl1LXtZJsAbSGHZTULF+dMuIgHKPeHFU7vfSDf0U4ApjOHAdXB+uEmq3GbE+JJjl75HTHaEv8eU3aZtAlPeS57XMAPgPj/VuLfOBRug+KshDYFXriy2TPiFCLKu6dJVUNSGsEezuFBiAN82ItqvosmJr7zTog/UM6NhS4YnOhO2IN5wFu3T02g2+/ZkDx9aDbBqEBeHzjBCXUY1N2m2h0z+tAdtMsRyNs9sCaF07onTTANADI0kyiJvB5F09cJ0xhFRpYKU6PgvejYpFiqmD/oEuMI/XH4FaiFOODRUOg4xUYHJ/GkHUapKoVJucGya1YxisIuNvIonO8X0IdvlqAlrEy5PdlijVKagDFVuNAYbd4lmW2gq4ZZ4guN1ie/RBzoEffYZM1AIqrQkhB/3ySoa43g85WwiajF5RtFnODTEp6x3ewzlGhSryadiE+8SH5x2StOHyjhNQm0C2DKBRAmrcgdQeWn8qoId/o9NDTVx6napLvk1x5RHjav7FK5kI5ffwqDchrNaN9eJJjvrCnFpBbUISkWgLbFTsppx+U3IyNvKfdPd71eiPoyU/Q/jOHJNUScFR6U+4gKLUFdLNp3qzlFfInQCGqaEm1BNZvcaCUlmFK67TyjzLP1DYrZfWMktzHU1JJIPoDn63DkZdyH1cAAAAASUVORK5CYII=" InformativeScreenshot="32570680ebb2aac0557e734e2046355c.jpg" Selector="&lt;html app='chrome.exe' title='MedlinePlus - Health Information from the National Library of Medicine' /&gt;" Title="MedlinePlus - Health Information from the National Library of Medicine" Url="https://medlineplus.gov/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

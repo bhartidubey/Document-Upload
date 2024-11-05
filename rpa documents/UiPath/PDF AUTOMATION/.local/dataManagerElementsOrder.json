@@ -1,0 +1,80 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "output3&Sequence_1",
+        "outputword&Sequence_1",
+        "output2&Sequence_1",
+        "output1&Sequence_1",
+        "output&Sequence_1",
+        "outputdata&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "readpdffrom email.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "invoic_edate&Sequence_2",
+        "invoivetotal&Sequence_2",
+        "invoicedate&Sequence_2",
+        "pdfoutput&Sequence_2",
+        "dt_outputdata&Sequence_1",
+        "outputdt&Sequence_1",
+        "folderpath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "single peace of information from pdf.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "totalvalue&Sequence_3",
+        "files&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "READPDFFILES1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt1_datatable&Sequence_1",
+        "invoicetotal&Sequence_2",
+        "invoiceDate&Sequence_2",
+        "DateOutput&Sequence_2",
+        "OCROutput&Sequence_2",
+        "FolderPath&Sequence_1",
+        "FILES&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "files&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

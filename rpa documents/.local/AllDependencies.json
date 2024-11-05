@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {},
+    "net8.0-windows7.0/win-x64": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "": [],
+    "net8.0-windows7.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\bdubey\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "Documents",
+      "projectName": "Documents",
+      "projectPath": "C:\\Users\\bdubey\\Documents\\.local",
+      "packagesPath": "C:\\Users\\bdubey\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bdubey\\Documents\\.local",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ]
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "runtimeIdentifierGraphPath": "C:\\Users\\bdubey\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="843.3333333333334,2926" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="74">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="108">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Build Datatable with 3 columns Invoice number, Invoice Date and Invoice Total&#xA;For each invoices in a folder, &#xA;   Opens in Adobe Acrobat Reader&#xA;   Extracts Invoice number, Invoice Date and Invoice Total using GetText&#xA;   Substring to obtain the relevent detail&#xA;   Added to Datatable&#xA;Data table is written to an excel file" DisplayName="Extracting data from multiple PDFs" sap:VirtualizedContainerService.HintSize="688,2861.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FolderPath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_InvoiceDetails" />
+      <Variable x:TypeArguments="x:String" Name="InvoiceTotal" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="Assign - Folder path containing PDFs" sap:VirtualizedContainerService.HintSize="626,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[FolderPath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Environment.CurrentDirectory + "/Invoice"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:BuildDataTable DataTable="[dt_InvoiceDetails]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="626,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Total&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[FolderPath]" sap:VirtualizedContainerService.HintSize="626,2296.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do - For File in Folder" sap:VirtualizedContainerService.HintSize="592,2002.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Invoice-485744.pdf - Adobe Reader" sap:VirtualizedContainerService.HintSize="530,1914.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Always" ScopeGuid="d8f8b9ca-fbc6-4381-972f-7af821ca335d" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do - Use Application/Browser" sap:VirtualizedContainerService.HintSize="496,1594.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="InvoiceDate" />
+                      <Variable x:TypeArguments="s:String[]" Name="infoArray" />
+                      <Variable x:TypeArguments="x:String" Name="InvoiceNumber" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text - Invoice Number" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="d8f8b9ca-fbc6-4381-972f-7af821ca335d" TextString="[InvoiceNumber]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="553, 211, 466, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Invoice No.'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Invoice No. 485744 Aleea Rozelor 84   ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="628ac7ed-4011-42c6-bf4b-61f54631aae5" InformativeScreenshot="9863da10b6f92df415d60a608726150f.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice-485744.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="553, 236, 147, 35" ElementType="Text" FriendlyName="'Date: 2017-05-28'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Date: *   ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Date: 2017-05-28   Vendor: Star Software   ' role='text' automationid='' check:text='Date: 2017-05-28 &amp;#xD;&amp;#xA;Vendor: Star Software' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text - Invoice Date" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="d8f8b9ca-fbc6-4381-972f-7af821ca335d" TextString="[InvoiceDate]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="553, 236, 147, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Date: 2017-05-28'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Date: 2017-05-28   Vendor: Star Software   ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="e543346a-ef37-4059-8dc3-8732b064c3d6" InformativeScreenshot="cf270704d4c8900c0aa34c49cdc07696.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice-485744.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="553, 211, 466, 25" ElementType="Text" FriendlyName="'Invoice No.'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Invoice No. *   ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Invoice No. 485744 Aleea Rozelor 84   ' role='text' automationid='' check:text='Invoice No. 485744 Aleea Rozelor 84' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text - Invoice Total" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="d8f8b9ca-fbc6-4381-972f-7af821ca335d" TextString="[InvoiceTotal]" Timeout="5000" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="950, 790, 127, 79" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Subtotal: 125178'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Subtotal: 125178 USD   Tax: 25035.6 USD   Total: 150214 USD   ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="b9d73140-4cfa-4893-88cb-aee70a78cd80" InformativeScreenshot="cc59cc5648adad234c656883fff36ee5.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice-485744.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 534, 524, 44" ElementType="Text" FriendlyName="'Item Description'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Item Description Quantity Price Per Total   Waste management ser*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Item Description Quantity Price Per Total   Waste management ser*' role='text' automationid='' check:text='Item Description Quantity Price Per Total &amp;#xD;&amp;#xA;Waste management services 1 150214 USD 150214 USD' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[InvoiceNumber]" />
+                    <Assign DisplayName="Assign - Extract Invoice Number" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[InvoiceNumber]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[InvoiceNumber.Split({"Invoice No."},StringSplitOptions.None)(1).Trim.Split({" "},StringSplitOptions.None)(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[InvoiceNumber]" />
+                    <Assign DisplayName="Assign - Extract invoice date" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[InvoiceDate]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[InvoiceDate.Split({"Date:"},StringSplitOptions.None)(1).Trim.Split({" "},StringSplitOptions.None)(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign DisplayName="Assign - Extract invoice total" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[InvoiceTotal]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[InvoiceTotal.Split({"Total:"},StringSplitOptions.None)(1).Trim]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{InvoiceNumber,InvoiceDate,InvoiceTotal}]" DataTable="[dt_InvoiceDetails]" DisplayName="Add Data Row - Invoice Details to Database" sap:VirtualizedContainerService.HintSize="434,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                    <WriteLine DisplayName="Write Line - Invoice Details" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Invoice Number: &quot; +  InvoiceNumber +  Environment.NewLine + &quot;Invoice Date: &quot; + InvoiceDate +  Environment.NewLine + &quot;Invoice Total: &quot; + InvoiceTotal]" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1042" Arguments="[CurrentFile.FullName]" FilePath="C:\Program Files (x86)\Adobe\Reader 11.0\Reader\acrord32.exe" IconBase64="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" InformativeScreenshot="e81b59415658aa5a631831b3c2edb015.png" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Invoice-485744.pdf - Adobe Reader' /&gt;" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+    <ui:WriteRange AddHeaders="True" DataTable="[dt_InvoiceDetails]" DisplayName="Write Range Workbook - Database details in excel" sap:VirtualizedContainerService.HintSize="626,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="A1" WorkbookPath="Invoice Details.xlsx" />
+  </Sequence>
+</Activity>

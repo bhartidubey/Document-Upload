@@ -1,0 +1,104 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "index&Sequence_1",
+        "ocrresult&Sequence_1",
+        "ocroutput&Sequence_1",
+        "output&Sequence_1",
+        "total&Sequence_1",
+        "dgf&Sequence_1",
+        "result&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "excel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "regex.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result&Sequence_1",
+        "firstmatch&Sequence_1",
+        "resul1&Sequence_1",
+        "data&Sequence_1",
+        "datatabl1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "exceldata.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "fullname&Sequence_8",
+        "split&Sequence_8",
+        "dt2&Sequence_2",
+        "SECONDARY&Sequence_2",
+        "PRIMARY&Sequence_2",
+        "TEST&Sequence_2",
+        "datatable&Sequence_2",
+        "dt1&Sequence_2",
+        "array&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "webdata.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dateday&Sequence_1",
+        "Datemonth&Sequence_1",
+        "Dateformat&Sequence_1",
+        "startdate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "excel3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "humidity&Sequence_5",
+        "temp&Sequence_5",
+        "dt1&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "excel7.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt1&Sequence_3",
+        "data&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

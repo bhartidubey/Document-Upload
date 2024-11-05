@@ -1,0 +1,9 @@
+Role,Responsibilities,Required Skillset
+RPA Architect,"Define RPA architecture, technology stack, and infrastructure. Collaborate with stakeholders to ensure alignment with goals.","Expertise in UiPath, RPA infrastructure, cloud/on-prem setup"
+RPA Developer (Senior),"Develop automation workflows, configure Orchestrator, and implement best practices for automation development.","Advanced UiPath Studio, Orchestrator, infrastructure setup"
+RPA Developer (Junior),"Assist in development, support testing, and deployment of automation workflows.","UiPath Studio, basic development, and testing skills"
+Business Analyst (BA),"Collaborate with business teams to gather requirements, prioritize processes for automation, and validate outcomes.","Process analysis, requirement gathering, documentation"
+DevOps Engineer,"Set up and manage CI/CD pipelines, infrastructure provisioning, and monitoring tools (ELK, AppDynamics).","CI/CD, cloud services (Azure, AWS), ELK stack"
+QA Engineer,"Conduct unit testing, integration testing, and user acceptance testing (UAT) for RPA workflows.","Testing, UiPath testing frameworks, debugging"
+Project Manager (PM),"Manage timelines, resource allocation, risk mitigation, and coordination between stakeholders.","Project management, resource management, risk analysis"
+Support Engineer (RPA Ops),"Monitor bots in production, provide RCA for exceptions, manage Orchestrator, handle RCA, and document issues.","RPA bot monitoring, RCA, support processes"

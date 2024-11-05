@@ -1,0 +1,9 @@
+Client Information
+Client Name
+Client ID
+Client Address
+Check Information
+Check Number
+Check Date
+Check Amount
+(incl. currency)

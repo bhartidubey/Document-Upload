@@ -1,0 +1,24 @@
+1. Database Server Details
+
+10.160.34.55
+ID- rpa_test
+
+10.160.40.28
+ID- rpa_test
+
+10.160.34.17
+ID- sa 
+
+2. Lisence tool
+
+UiPath
+
+
+3. Email
+
+Email: rpa.bot@trca.thk.com
+Server: trca-thk-com.mail.protection.outlook.com and 10.160.54.16
+Port: 25
+
+
+

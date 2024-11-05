@@ -1,0 +1,17 @@
+Client Information
+Client Name
+Client ID
+Client Address
+Check Information
+Check Number
+Check Date
+Check Amount
+(incl. currency)
+Employee who handled the request: John Doe, JD12326
+For internal use only – do not distribute to the client
+Craig Tober
+AD88069
+22 rue des Lacs
+76186977
+2018-03-11
+24507 EUR
